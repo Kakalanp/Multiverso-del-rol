@@ -1,0 +1,23 @@
+.container:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    background: radial-gradient(rgba(161, 126, 6, 0.2), transparent 80%);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #191c40;
+    border: 5px solid #a17e06;
+    height: 75vh;
+    width: 80vw;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    border-radius: 30px;
+    text-align: center;
+  }

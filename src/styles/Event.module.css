@@ -1,0 +1,30 @@
+@font-face {
+    font-family: AngelWish;
+    src: url('../assets/Fonts/AngelWishRegular-1G9wM.ttf');
+}
+
+.event {
+    color: #c59807;
+    padding:  30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.5) inset;
+    margin: 10px 0;
+}
+
+.master, .time {
+    color: #464c8c;
+    text-shadow: 2px 2px 6px black;
+}
+
+.title {
+    width: 100%;
+    text-shadow: 5px 5px 8px black;
+    font-family: AngelWish;
+    font-weight: normal;
+    font-size: 2.5rem;
+}

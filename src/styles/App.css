@@ -1,6 +1,13 @@
+@font-face {
+  font-family: Nuvel;
+  src: url('../assets/Fonts/Nuvel.ttf')
+}
+
 * {
     box-sizing: border-box;
-    margin: 0
+    margin: 0;
+    font-family: Nuvel;
+    font-size: 1.3rem;
 }
 
 body {

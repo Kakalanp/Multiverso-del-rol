@@ -1,16 +1,46 @@
+@property --intensity {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 10%;
+}
+
+@property --distance {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 60%;
+}
+
 .container:before {
     content: "";
     position: fixed;
     z-index: -1;
     top:0;
     left:0;
-    background: radial-gradient(rgba(161, 126, 6, 0.2), transparent 80%);
+    transition: --intensity 0.5s;
+    background: radial-gradient(rgba(161, 126, 6, var(--intensity)), transparent var(--distance));  
+    animation: glow 5s infinite alternate;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
   }
+
+  @keyframes glow {
+    from {
+      --intensity: 30%;
+      --distance: 60%;
+    }
+    80%{
+      --intensity: 70%;
+      --distance: 90%;
+    }
+    to {
+      --intensity: 70%;
+      --distance: 90%;
+    }
+  }
   
   .container {
+    padding: 0 20px;
     background-color: #191c40;
     border: 5px solid #a17e06;
     height: 75vh;
@@ -19,5 +49,27 @@
     top: 12%;
     left: 10%;
     border-radius: 30px;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.5) inset;
+  }
+  .content{
+    width: 100%;
+    padding-left: 10px;
+    height: calc(75vh - 10px);
+    overflow-y: scroll;
     text-align: center;
   }
+  ::-webkit-scrollbar {
+      width: 10px;
+      padding-right: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #99999917;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #4d4d4d7a;
+      border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: #a17d066d;
+  }
+  

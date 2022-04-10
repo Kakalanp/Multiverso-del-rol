@@ -3,7 +3,7 @@ import data from '../dataPlaceholder.js'
 import Event from './Event'
 
 export default function Schedule() {
-    const confirmedTopic = data.filter((topic) => topic.ESTADO === 'Confirmado')
+    // const confirmedTopic = data.filter((topic) => topic.ESTADO === 'Confirmado')
     return(
         <div className={styles.container}>
             <div className={styles.content}>

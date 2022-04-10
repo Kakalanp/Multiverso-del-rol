@@ -9,6 +9,8 @@ export default function Event({ master, title, date, time, masterId }) {
 
   const localTime = new Date("6/29/2022 4:52:48 PM GMT-1").toLocaleString();
 
+  // https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20201231T193000Z/20201231T223000Z&details=Charla%20de%20Multiverso%20Del%20Rol&location=https://discord.gg/MBd9Wbwt
+
   return (
     <div className={styles.event}>
       {

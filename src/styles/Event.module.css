@@ -1,5 +1,5 @@
 @font-face {
-    font-family: AngelWish;
+    font-family: EnchantedLand;
     src: url('../assets/Fonts/Enchanted\ Land.ttf');
 }
 
@@ -24,7 +24,7 @@
 .title {
     width: 100%;
     text-shadow: 5px 5px 8px black;
-    font-family: AngelWish;
+    font-family: EnchantedLand;
     font-weight: normal;
     font-size: 2.7rem;
     text-align: center;

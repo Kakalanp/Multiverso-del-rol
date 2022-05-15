@@ -1,10 +1,10 @@
 @font-face {
     font-family: AngelWish;
-    src: url('../assets/Fonts/AngelWishRegular-1G9wM.ttf');
+    src: url('../assets/Fonts/Enchanted\ Land.ttf');
 }
 
 .event {
-    color: #c59807;
+    color: #b36d02;
     padding:  30px;
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@
 }
 
 .master, .time {
-    color: #464c8c;
+    color: #7179cb;
     text-shadow: 2px 2px 6px black;
 }
 
@@ -26,5 +26,7 @@
     text-shadow: 5px 5px 8px black;
     font-family: AngelWish;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 10px 0;
 }

@@ -7,10 +7,8 @@ export default function Event({ master, title, date, time, masterId }) {
     masterId = masterId.split(", ");
   }
 
-  const localTime = new Date("6/29/2022 4:52:48 PM GMT-1").toLocaleString();
-
-  // https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20201231T193000Z/20201231T223000Z&details=Charla%20de%20Multiverso%20Del%20Rol&location=https://discord.gg/MBd9Wbwt
-
+const link = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title.replace(/\s/g, '%20')}&dates=${date.split('/').reverse().join('')}T${time.replace(/\D/g, '')}Z/${date.split('/').reverse().join('')}T${time.replace(/\D/g, '')}Z&details=Charla%20de%20Multiverso%20Del%20Rol&location=https://discord.gg/MBd9Wbwt`
+console.log(link)
   return (
     <div className={styles.event}>
       {
@@ -53,7 +51,7 @@ export default function Event({ master, title, date, time, masterId }) {
           <p className={styles.master}>{master}</p>
         )
       }
-      <p className={styles.time}>{localTime}</p>
+      <p className={styles.time}>{new Date("6/29/2022 4:52:48 PM GMT-1").toLocaleString()}</p>
       <p className={styles.title}>{title}</p>
     </div>
   );
